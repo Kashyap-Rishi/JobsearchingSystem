@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jobhunter</title>
+<link rel="stylesheet" href="css/styles4.css">
+  </head>
+
+  <body>
+
+    <div class="box" id="heading">
+      <h1>SEARCH FOR JOB-SEEKER.</h1>
+    </div>
+
+
+<div class="box">
+
+  <input type="text" id="myInput" placeholder="Enter skills required....." name="search" width="400px" onkeyup="searchFun()"/>
+
+        <table id="myTable">
+          <tr class="header">
+            <th style="width:40%;">Name</th>
+            <th style="width:30%;">Skill</th>
+            <th style="width:30%;">Qualification</th>
+            <th style="width:30%;">Email</th>
+          </tr>
+            <% x.forEach(function(y){ %>
+          <tr>
+            <td><%= y.name %></td>
+
+            <td><%= y.skills %></td>
+
+             <td><%= y.select %></td>
+             <td><%= y.username %></td>
+          </tr>
+          <%  }) %>
+        </table>
+
+    </div>
+
+
+  <script type="text/javascript">
+
+  const searchFun=()=>{
+    let filter=document.getElementById('myInput').value.toUpperCase();
+
+    let myTable=document.getElementById('myTable');
+
+    let tr= myTable.getElementsByTagName('tr');
+
+    for(var i=0;i<tr.length;i++){
+      let td=tr[i].getElementsByTagName('td')[1];
+
+      if(td){
+        let textValue=td.textContent||td.innerHTML;
+
+        if(textValue.toUpperCase().indexOf(filter)>-1){
+              tr[i].style.display="";
+
+        }else{
+          tr[i].style.display="none";
+        }
+      }
+    }
+
+  }
+
+
+  </script>
+
+
+
+
+  </body>
+</html>

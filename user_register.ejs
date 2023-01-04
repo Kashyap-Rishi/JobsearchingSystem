@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FORMS</title>
+  <link rel="stylesheet" href="css/styles1.css">
+  <script src="https://kit.fontawesome.com/2096cafe8c.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <h1>REGISTERATION FORM</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <form class="" action="/user_register" method="POST">
+      <i class="fa-solid fa-user"></i>
+      <input type="text" placeholder="Enter name" name="name" size="80" id="cont" required><br>
+
+      <i class="fa-solid fa-envelope"></i>
+      <input type="text" placeholder="Enter Email" name="username" size="80" id="cont" required><br>
+
+      <i class="fa fa-phone" aria-hidden="true"></i>
+       <input type="text" placeholder="Enter Contact number" name="phonenumber" size="80" id="cont" required><br>
+
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" placeholder="Create Password" name="password" size="80" id="cont" required><br>
+
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" placeholder="Repeat Password" name="pswRepeat" size="80" id="cont" required><br>
+     <label for="">DOB : </label>
+      <input type="date" id="birthday" name="birthday">
+
+            <label for="">Select your qualifications : </label>
+            <select name="select" id="country" label="Select a tender">
+              <optgroup label="Degree in">
+                <option value="CSE MBA">CSE MBA</option>
+                <option value="CSE MTECH">CSE MTECH</option>
+                <option value="CSE BTECH">CSE BTECH</option>
+                <option value="CSE BCA">CSE BCA</option>
+              </optgroup>
+            </select>
+            <br>
+
+       <i class="fa fa-laptop" aria-hidden="true"></i>
+        <input type="text" placeholder="Skills" name="skills" size="80" id="cont" required><br>
+
+       <label for=""> Upload Resume - </label>
+        <input type="file" id="myFile" name="filename">
+        <input type="submit"><br>
+
+      <input type="checkbox" name="vehicle1" id="check1" value="Bike">
+      <label for="vehicle1"> I agree with terms and condition</label><br>
+      <input type="checkbox" name="vehicle2" id="check2" value="Car">
+      <label for="vehicle2"> I want to recieve the emails and updates.</label><br>
+      <hr>
+
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="/login">Sign in</a>.</p>
+  </div>
+
+  </form>
+</body>
+
+</html>

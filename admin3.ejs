@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jobhunter</title>
+    <link rel="stylesheet" href="css/styles3.css">
+  </head>
+
+  <body>
+
+    <div class="box" id="heading">
+      <h1>JOB_SEEKERS</h1>
+    </div>
+
+    <div class="box">
+<% x.forEach(function(y){ %>
+<form action="/delete3" method="post">
+  <div class = "item">
+     <label for="checkit">DELETE JOB_SEEKER : </label>
+    <input type="checkbox" name="checkbox" value="<%=y._id%>" onChange="this.form.submit()">
+    <p style="font-weight:400;">Name:</p>
+    <p><%= y.name %></p>
+    <p style="font-weight:400;">Username:</p>
+    <p><%= y.username %></p>
+    <p style="font-weight:400;">Skills :</p>
+    <p><%= y.skill %></p>
+    <p style="font-weight:400;">Qualification</p>
+    <p><%= y.qualification %></p>
+        </div>
+      </form>
+        <% }) %>
+
+
+  </div>
+
+
+  </body>
+</html>

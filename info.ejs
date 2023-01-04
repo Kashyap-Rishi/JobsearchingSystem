@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jobhunter</title>
+    <link rel="stylesheet" href="css/styles3.css">
+  </head>
+
+  <body>
+
+
+
+
+
+    <div class="box" id="heading">
+      <h1>POST A JOB OFFER.</h1>
+    </div>
+
+    <div class="box">
+      <% x.forEach(function(y){ %>
+
+        <div class = "item">
+
+          <p style="font-weight:400;">Company:</p>
+          <p><%= y.company %></p>
+          <p style="font-weight:400;">Post:</p>
+          <p><%= y.post %></p>
+          <p style="font-weight:400;">Qualification:</p>
+          <p><%= y.qualification %></p>
+          <p style="font-weight:400;">Skill:</p>
+          <p><%= y.skill %></p>
+          <p style="font-weight:400;">City</p>
+          <p><%= y.city %></p>
+              </div>
+
+              <% }) %>
+
+
+        <form class="item" action="/info" method="post">
+          <input type="text" name="newcompanyItem" placeholder="Company Name" autocomplete="off">
+          <input type="text" name="newpostItem" placeholder="Job Post" autocomplete="off">
+          <input type="text" name="newqualificationItem" placeholder="Job Qualification" autocomplete="off">
+          <input type="text" name="newskillItem" placeholder="Skills Expected" autocomplete="off">
+          <input type="text" name="newcityItem" placeholder="City" autocomplete="off">
+          <button type="submit" name="button">+</button>
+        </form>
+  </div>
+
+
+  </body>
+</html>
