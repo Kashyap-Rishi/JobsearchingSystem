@@ -1,0 +1,25 @@
+h1{
+  text-align:left;
+  font-size: 3rem;
+  font-family:sans-serif;
+  color:black;
+  margin-top:12px;
+}
+
+body{
+  background-color: #89CFFD;
+}
+
+.box{
+  width:90%;
+  height:220px;
+  margin: auto;
+  padding:30px;
+  text-align: left;
+  background: #DFF6FF;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+p{
+  font-size: 1.5rem;
+}

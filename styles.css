@@ -1,0 +1,251 @@
+body{
+  margin:0;
+  padding :0;
+  font-family: sans-serif;
+}
+
+nav{
+  position :fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.6);
+  border-bottom: 1px solid #fff;
+  z-index:999;
+}
+nav .logo{
+  padding :22px 20px;
+  height:80px;
+  float:left;
+  font-size: 24px;
+  font-weight:bold;
+  text-transform: uppercase;
+  color:#fff;
+}
+nav ul{
+  list-style: none;
+  float:right;
+  margin:0;
+  padding:0;
+  display:flex;
+}
+nav ul li a{
+  line-height: 80px;
+  color:#fff;
+  padding:12px 30px;
+  text-decoration : none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  background: rgba(0,0,0,0.7);
+  border-radius:6px;
+}
+
+
+#cont{
+  height:1000px;
+  background: url("https://st2.depositphotos.com/3591429/7712/i/600/depositphotos_77127743-stock-photo-job-search-qualification-concept.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 170px;
+}
+.cont1a{
+  padding:20px ;
+  margin-left: 450px;
+  justify-content: center;
+  align-items: center;
+
+}
+.button {
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #B8E8FC;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #31E1F7;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+.button2 {
+  margin-left: 110px;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #B8E8FC;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button2:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #31E1F7;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button2:hover {
+  color: #fff;
+}
+.button2:hover:before {
+  width: 100%;
+}
+.button1 {
+  margin-left:50px;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #B8E8FC;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button1:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #31E1F7;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button1:hover {
+  color: #fff;
+}
+.button1:hover:before {
+  width: 100%;
+}
+
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+#cont3{
+  margin-top:170px;
+  height:300px;
+  background-color: #AEBDCA;
+  padding-top:30px;
+  padding-bottom: 20px;
+
+}
+
+
+.pg2{
+  color: white;
+  margin-left: 1110px;
+
+}
+
+.pg3:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon2{
+  margin: 4px 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.myicons{
+  margin-left:1100px;
+}
+
+.cont5{
+  padding-left: 100px;
+padding-top:0px;
+  color: white;
+
+}
+h5{
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.cont6{
+  background-color: #AEBDCA ;
+  color:#666;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-left: 600px;
+  margin-top: 0px;
+  font-size: 0.8em;
+}

@@ -1,0 +1,83 @@
+h1{
+  text-align: center;
+  color: #79DAE8;
+}
+
+
+.container{
+  font-family: "Roboto", sans-serif;
+ width:650px;
+ margin:auto auto;
+ background:linear-gradient(to right, #ffffff 10%, #E8F9FD 30%);
+ border-radius: 10px;
+ padding: 20px;
+}
+
+
+input[type=text], input[type=password],input[type=date] {
+  padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=data] {
+background-color: #ddd;
+outline: none;
+
+}
+
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+i{
+  position: absolute;
+  margin:18px 0 0 10px;
+  height: 15px;
+  padding-right: 8px;
+  border-right: 1px solid;
+}
+
+
+.registerbtn {
+background-color: #001D6E;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.8;
+}
+
+.registerbtn:hover {
+opacity:1;
+}
+
+
+a {
+color: dodgerblue;
+}
+
+.signin {
+background-color: #f1f1f1;
+text-align: center;
+}
+#cont{
+  padding-left: 40px;
+}
+#check1{
+  margin:20px 0 0;
+}
+#check2{
+  margin:5px 0 20px;
+}
+#country{
+  margin:30px 0 20px;
+}
+body{
+  background-color: #C4DDFF;
+}
